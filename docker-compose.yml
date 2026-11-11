@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    profiles: ["persistence"]
+    environment:
+      POSTGRES_DB: localmind
+      POSTGRES_USER: localmind
+      POSTGRES_PASSWORD: change-me-before-enabling
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    restart: unless-stopped
+  notebook-runner:
+    image: python:3.12-slim
+    profiles: ["notebooks"]
+    command: ["sh", "-c", "echo 'Notebook runner scaffold — do not expose this container until isolation is configured.' && sleep infinity"]
+    read_only: true
+    network_mode: none
+    mem_limit: 1g
+    pids_limit: 128
+    security_opt: [no-new-privileges:true]
+volumes:
+  postgres_data:

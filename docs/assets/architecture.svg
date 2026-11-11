@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">Tabzzat Tabish Server architecture</title>
+  <desc id="desc">A browser connects privately to a FastAPI application on an Oracle Linux server, which uses Ollama and PostgreSQL.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#09101c"/><stop offset="1" stop-color="#14243b"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".26"/></filter>
+  </defs>
+  <rect width="1200" height="560" rx="26" fill="url(#bg)"/>
+  <text x="64" y="78" fill="#f1f5f9" font-size="32" font-family="Arial, sans-serif" font-weight="700">Tabzzat Tabish Server</text>
+  <text x="64" y="110" fill="#a8b6c9" font-size="18" font-family="Arial, sans-serif">Private local-model AI workspace · deployment-ready architecture</text>
+  <g filter="url(#shadow)" font-family="Arial, sans-serif">
+    <rect x="72" y="216" width="210" height="150" rx="18" fill="#17243a" stroke="#3c5271"/>
+    <text x="177" y="276" fill="#7ce8c9" font-size="20" text-anchor="middle" font-weight="700">Your Browser</text>
+    <text x="177" y="309" fill="#d7e2f0" font-size="16" text-anchor="middle">React interface</text>
+    <text x="177" y="336" fill="#9eb0c8" font-size="14" text-anchor="middle">Chat · history · code</text>
+    <rect x="420" y="148" width="318" height="282" rx="20" fill="#152943" stroke="#57bda8" stroke-width="2"/>
+    <text x="579" y="196" fill="#7ce8c9" font-size="22" text-anchor="middle" font-weight="700">Oracle Linux Server</text>
+    <rect x="456" y="224" width="246" height="58" rx="10" fill="#233e5b"/>
+    <text x="579" y="260" fill="#f1f5f9" font-size="17" text-anchor="middle">FastAPI application</text>
+    <rect x="456" y="306" width="246" height="58" rx="10" fill="#233e5b"/>
+    <text x="579" y="342" fill="#f1f5f9" font-size="17" text-anchor="middle">PostgreSQL history</text>
+    <rect x="876" y="216" width="250" height="150" rx="18" fill="#17243a" stroke="#3c5271"/>
+    <text x="1001" y="276" fill="#7ce8c9" font-size="20" text-anchor="middle" font-weight="700">Ollama</text>
+    <text x="1001" y="309" fill="#d7e2f0" font-size="16" text-anchor="middle">Local model engine</text>
+    <text x="1001" y="336" fill="#9eb0c8" font-size="14" text-anchor="middle">Qwen and future models</text>
+  </g>
+  <g stroke="#7ce8c9" stroke-width="3" fill="none" stroke-linecap="round"><path d="M282 291h118"/><path d="M738 291h118"/></g>
+  <g fill="#7ce8c9"><path d="M400 283l16 8-16 8z"/><path d="M856 283l16 8-16 8z"/></g>
+  <text x="341" y="270" fill="#9eb0c8" font-size="13" font-family="Arial, sans-serif" text-anchor="middle">Private SSH tunnel</text>
+  <text x="797" y="270" fill="#9eb0c8" font-size="13" font-family="Arial, sans-serif" text-anchor="middle">Loopback only</text>
+  <text x="64" y="505" fill="#9eb0c8" font-size="15" font-family="Arial, sans-serif">Current status: application and Oracle deployment package prepared. Oracle server provisioning is the next step.</text>
+</svg>
